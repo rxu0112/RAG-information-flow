@@ -3,6 +3,11 @@ This is the source code for the paper [Information Flow Reveals When to Trust La
 ![screenshot](Method.png)
 **(a)** An example of a short-form, information-seeking QA. **(b)** Principal information flow is extracted in reverse from the model's complete information flow. The resulting Emergence Order records the sequence of input tokens added to this principal flow, with earlier tokens indicating greater importance for the final generation. For clarity, we neglect MLP operations as they operate independently on each token. **(c)** The contribution of each input token to the next generated token is defined as the sum of all valid paths from itself to the last input token embedding in the final layer.  Contribution Layout represents the contributions of all input tokens.
 
+# Datasets
+
+The `preprocessed_data` folder contains the SQuAD2.0, Hotpot, and MS MARCO datasets.
+
+
 We first generate predictions from LLM models and evaluate the correctness of the predictions.
 
 1. proposed/inference.py generate predictions on datasets based on selected inference model.
