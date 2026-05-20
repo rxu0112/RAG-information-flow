@@ -3,10 +3,20 @@ This is the source code for the paper [Information Flow Reveals When to Trust La
 ![screenshot](Method.png)
 **(a)** An example of a short-form, information-seeking QA. **(b)** Principal information flow is extracted in reverse from the model's complete information flow. The resulting Emergence Order records the sequence of input tokens added to this principal flow, with earlier tokens indicating greater importance for the final generation. For clarity, we neglect MLP operations as they operate independently on each token. **(c)** The contribution of each input token to the next generated token is defined as the sum of all valid paths from itself to the last input token embedding in the final layer.  Contribution Layout represents the contributions of all input tokens.
 
-# Datasets
+# Environments
+
+# Procedure
 
 The `preprocessed_data` folder contains the SQuAD2.0, Hotpot, and MS MARCO datasets.
 
+The `proposed` folder contains the implementation scripts for our proposed methods. It includes:
+
+1. Prediction Generation and Evaluation
+Scripts for generating predictions from language models and evaluating the correctness of the generated answers.
+2. Shapley Value Computation
+Scripts for computing Shapley values to identify which context tokens are most relevant to a given question.
+3. Uncertainty Estimation via Information Flow
+Scripts for estimating prediction uncertainty based on information flow analysis within the model.
 
 We first generate predictions from LLM models and evaluate the correctness of the predictions.
 
