@@ -465,10 +465,10 @@ X = scaler.fit_transform(X)
 indices = np.arange(len(y))
 
 temp_idx, test_idx, y_temp, y_test = train_test_split(
-    indices, y, test_size=0.2)
+    indices, y, test_size=0.2, random_state=42)
 
 train_idx, val_idx, y_train, y_val = train_test_split(
-    temp_idx, y_temp, test_size=0.25)
+    temp_idx, y_temp, test_size=0.25, random_state=42)
 
 X_train, X_val, X_test = X[train_idx], X[val_idx], X[test_idx]
 
