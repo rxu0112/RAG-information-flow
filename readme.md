@@ -7,7 +7,7 @@ This is the source code for the paper [Information Flow Reveals When to Trust La
 
 # Procedure
 
-The `preprocessed_data` folder contains the SQuAD2.0, Hotpot, and MS MARCO datasets.
+The `preprocessed_data` folder contains preprocessed versions of the SQuAD2.0, HotpotQA, and MS MARCO datasets, formatted to be compatible with our codebase.
 
 The `proposed` folder contains the implementation scripts for our proposed methods. It includes:
 
