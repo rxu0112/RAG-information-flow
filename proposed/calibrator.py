@@ -119,7 +119,7 @@ with open(f'results/{args.model}_{args.dataset}/proposed_{args.reranker}_p={str(
     json.dump(output, f, ensure_ascii=False, indent=2)
 
 
-# --- only proposed metric vs only relevence score from reranker ---
+# --- only proposed metric vs only relevance score from reranker ---
 
 dtrain_full = xgb.DMatrix(np.vstack([X_train[:, :-1], X_val[:, :-1]]),
                           label=np.hstack([y_train, y_val]))
