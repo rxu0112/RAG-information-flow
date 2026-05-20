@@ -5,18 +5,28 @@ This is the source code for the paper [Information Flow Reveals When to Trust La
 
 # Environments
 
+# Models
+
+
 # Procedure
 
-The `preprocessed_data` folder contains preprocessed versions of the SQuAD2.0, HotpotQA, and MS MARCO datasets, formatted to be compatible with our codebase.
+1. The `preprocessed_data` folder contains preprocessed versions of the SQuAD2.0, HotpotQA, and MS MARCO datasets, formatted to be compatible with our codebase.
 
-The `proposed` folder contains the implementation scripts for our proposed methods. It includes:
+2. The `proposed` folder contains the implementation of our proposed framework, including:
 
-1. Prediction Generation and Evaluation
-Scripts for generating predictions from language models and evaluating the correctness of the generated answers.
-2. Shapley Value Computation
-Scripts for computing Shapley values to identify which context tokens are most relevant to a given question.
-3. Uncertainty Estimation via Information Flow
-Scripts for estimating prediction uncertainty based on information flow analysis within the model.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1). **Prediction Generation and Evaluation**. Modules for producing answers with language models and assessing prediction correctness.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2). **Shapley Value Analysis**. Utilities for computing Shapley values to measure the contribution of individual context tokens to question answering.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3). **Information-Flow-Based Uncertainty Estimation**. Components for estimating predictive uncertainty via information-flow analysis within the model.
+
+3. The `baselines` folder provides implementations of representative baseline approaches, including:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(1). **Data Preparation for Baselines**. Utilities for constructing training, validation, and test splits used in baseline experiments.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2). **Baseline Uncertainty Quantification Methods**. Scripts for reproducing and evaluating baseline uncertainty quantification (UQ) techniques.
+
+4. 
 
 We first generate predictions from LLM models and evaluate the correctness of the predictions.
 
