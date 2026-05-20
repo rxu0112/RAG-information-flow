@@ -1,0 +1,1 @@
+Due to GitHub storage limitations, please download the required files from the [Hugging Face Bucket](https://huggingface.co/buckets/rxu0112/RAG-information-flow) and place them in the corresponding directories to reproduce the results.
