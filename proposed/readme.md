@@ -6,7 +6,7 @@ Generates predictions on datasets based on the selected inference model.
 
 (2). `proposed/eval_hem_answerable.py` 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Evaluates if the predicted answers are correct.
+Evaluates if the predicted answers are correct.
 
 **Then we compute Shapley values to identify which context tokens are most relevant for answering a question.**
 
