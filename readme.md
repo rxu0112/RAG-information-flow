@@ -3,13 +3,13 @@ This is the source code for the paper [Information Flow Reveals When to Trust La
 ![screenshot](Method.png)
 **(a)** An example of a short-form, information-seeking QA. **(b)** Principal information flow is extracted in reverse from the model's complete information flow. The resulting Emergence Order records the sequence of input tokens added to this principal flow, with earlier tokens indicating greater importance for the final generation. For clarity, we neglect MLP operations as they operate independently on each token. **(c)** The contribution of each input token to the next generated token is defined as the sum of all valid paths from itself to the last input token embedding in the final layer.  Contribution Layout represents the contributions of all input tokens.
 
-# Environments
+## Environments
 
-# Models
+## Models
 Our experiments use Meta’s LLaMA-3.2-3B-Instruct, LLaMA-3-8B-Instruct, and Gemma-3-4B-it as the base inference language models. We combine each question with both the predicted answer and the ground-truth answer to construct two natural-language statements using Qwen2.5-7B. The generated prediction statement is subsequently evaluated with HHEM-2.1-Open. In addition, Qwen3-Reranker-8B, MiniLM-L12-v2, and BGE-v2-m3 are employed as ranking models to assign relevance scores to contextual passages.
 
 You can download the models locally and replace the keyword `"MODEL_PATH_PLACEHOLDER"` in our scripts with the corresponding local model paths.
-# Procedure
+## Code
 
 1. The `preprocessed_data` folder contains preprocessed versions of the SQuAD2.0, HotpotQA, and MS MARCO datasets, formatted to be compatible with our codebase.
 
