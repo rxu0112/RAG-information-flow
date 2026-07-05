@@ -1,0 +1,14 @@
+python3 ragu/semantic_uncertainty/generate_answers.py
+   --model_name $llm
+   --precomputed_gen
+   --no-get_training_set_generations
+   --no-get_training_set_generations_most_likely_only
+   --dataset $data
+   --most_likely_file $HOMEOUT/$model-$data-SPLIT-RAGQAt${TOP}_$prompt-qwen2-72b-it-awq.jsonl
+   --top_n $TOP
+   --samples_file $HOMEOUT/$model-$data-SPLIT-samples_t${TOP}_$prompt.jsonl
+   --utilities_file $HOMEOUT/$model-$data-$split-distil_t${TOP}_$prompt-score-qwen2-72b-it-awq-point_1.0acc_LM-nli_1.00be_combined_pred.jsonl
+   --original_file $HOMEDATA/$data-SPLIT.jsonl
+   --acc_LM
+   --model_max_new_tokens 50
+   --eval_mode $split

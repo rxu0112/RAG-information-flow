@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Model weight files (too large for GitHub)
+*.bin
+*.h5
+*.safetensors
+*.msgpack
+*.ot
+*.onnx
+
+# BERT model directories
+**/bert-base-uncased/
+**/albert-xlarge-vitaminc-mnli/
+**/contriever_msmarco/

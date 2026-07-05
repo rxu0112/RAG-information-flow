@@ -1,0 +1,14 @@
+python ragu/retrieval_qa/run_baseline_lm.py
+   --model_name Llama-3.2-3B-Instruct
+   --split $SPLIT
+   --input_file ragu/data/retrieval_output.jsonl
+   --result_fp ragu/data/run_baseline_lm.jsonl
+   --prompt_name "chat_directRagQA_REAR3"
+   --chat_template
+   --top_n 5
+   --temperature 0.0
+   --top_p 1
+   --max_new_tokens 50
+   --do_stop
+   --logprobs 1
+   --compute_pmi

@@ -1,0 +1,43 @@
+hydra:
+  run:
+    dir: ${cache_path}/${task}/${model.path}/${dataset}/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+defaults:
+  - model: bloomz-560m
+  - estimators: default_estimators
+  - stat_calculators: default_calculators
+  - _self_
+
+cache_path: ./workdir/output
+save_path: '${hydra:run.dir}'
+
+task: qa
+instruct: false
+
+# 使用本地 JSON 文件
+dataset: ['squad_custom', 'continuation']
+text_column: input
+label_column: output
+train_split: train
+eval_split: validation
+n_shot: 0
+few_shot_split: train
+few_shot_prompt: null
+trust_remote_code: false
+size: null
+
+# 数据加载配置
+load_from_disk: true
+dataset_path: Info-flow_RAG/preprocessed_data/squad2_prepared.json
+
+max_new_tokens: 20
+generation_params:
+  stop_strings:
+    - "\n"
+subsample_eval_dataset: -1
+batch_size: 1
+
+generation_metrics: null
+ignore_exceptions: false
+seed:
+    - 1

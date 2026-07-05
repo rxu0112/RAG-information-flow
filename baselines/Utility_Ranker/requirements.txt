@@ -1,0 +1,22 @@
+# Adjust torch/faiss/vllm versions to match your CUDA environment.
+absl-py
+beir
+datasets
+evaluate
+faiss-gpu
+jsonlines
+matplotlib
+nltk
+numpy
+pandas
+protobuf
+rouge_score
+scikit-learn
+scipy
+sentencepiece
+tenacity
+torch
+transformers
+tqdm
+vllm
+wandb
