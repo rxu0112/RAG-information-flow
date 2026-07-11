@@ -13,7 +13,7 @@ Evaluates if the predicted answers are correct.
 
 (1). `proposed/gemma_tokenization_diff.py`
 
-Identifies samples that are tokenized differently between LLaMA-3.2-3B-Instruct and Gemma-3-4B-it. Since Shapley values are computed at the token level, this script avoids recomputing Shapley values for all Gemma-tokenized samples, significantly reducing computation time.
+Since Shapley values are computed at the token level, this script avoids recomputing Shapley values for all samples that are tokenized identically between LLaMA and Gemma, significantly reducing computation time.
 
 (2). `proposed/SHAP_Qwen3_8B.py`, `proposed/SHAP_MiniLM_L12.py`, and `proposed/SHAP_BGE-v2-m3.py`
 
