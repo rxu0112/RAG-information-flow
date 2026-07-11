@@ -19,9 +19,9 @@ You can download the models locally and replace the keyword `"MODEL_PATH_PLACEHO
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2). **Relevance Analysis**. Utilities for computing Shapley values to measure the relevance of individual context tokens to question answering.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2). **Contribution Analysis**. Scripts for using information flow to track each context token's contribution to the prediction.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3). **Contribution Analysis**. Scripts for using information flow to track each context token's contribution to the prediction.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3). **Information-Flow-Based Uncertainty Estimation**. Components for estimating predictive uncertainty via the measured contribution and relevance.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(4). **Information-Flow-Based Uncertainty Estimation**. Components for estimating predictive uncertainty via the measured contribution and relevance.
 
 3. The `baselines` folder provides implementations of representative baseline approaches, including:
 
