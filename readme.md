@@ -6,6 +6,10 @@ This is the source code for the paper [Information Flow Reveals When to Trust La
 ## Environments
 This is our runtime environment. You can download the environment package directly from：
 https://huggingface.co/datasets/cyyy6661/RAG-information-flow
+```bash
+tar -xzf baseline_full.tar.gz -C /home/$USER/anaconda3/envs/baseline_full
+conda activate /home/$USER/anaconda3/envs/baseline_full
+```
 ## Models
 Our experiments use Meta’s LLaMA-3.2-3B-Instruct, LLaMA-3-8B-Instruct, and Gemma-3-4B-it as the base inference language models. We combine each question with both the predicted answer and the ground-truth answer to construct two natural-language statements using Qwen2.5-7B. The generated prediction statement is subsequently evaluated with HHEM-2.1-Open. In addition, Qwen3-Reranker-8B, MiniLM-L12-v2, and BGE-v2-m3 are employed as ranking models to assign relevance scores to contextual passages.
 
