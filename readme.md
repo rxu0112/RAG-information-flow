@@ -6,6 +6,7 @@ This is the source code for the paper [Information Flow Reveals When to Trust La
 ## Environments
 This is our runtime environment. You can download the environment package directly from：
 https://huggingface.co/datasets/cyyy6661/RAG-information-flow
+Next, follow these steps:
 ```bash
 tar -xzf baseline_full.tar.gz -C /home/$USER/anaconda3/envs/baseline_full
 conda activate /home/$USER/anaconda3/envs/baseline_full
